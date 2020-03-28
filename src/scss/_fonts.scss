@@ -1,47 +1,68 @@
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.woff2?gleoty') format('woff2'),
-      url('../fonts/icomoon.woff?gleoty') format('woff');
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff2?418rsq') format('woff2'),
+    url('../fonts/icomoon.woff?418rsq') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak-as: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-close1:before {
-    content: "\e900";
-  }
-  .icon-play:before {
-    content: "\f04b";
-  }
-  .icon-twitter:before {
-    content: "\f099";
-  }
-  .icon-facebook:before {
-    content: "\f09a";
-  }
-  .icon-facebook-f:before {
-    content: "\f09a";
-  }
-  .icon-vk:before {
-    content: "\f189";
-  }
-  .icon-telegram:before {
-    content: "\f2c6";
-  }
-  
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-devices:before {
+  content: "\e901";
+}
+
+.icon-close1:before {
+  content: "\e900";
+}
+
+.icon-play:before {
+  content: "\f04b";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-code:before {
+  content: "\f121";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-vk:before {
+  content: "\f189";
+}
+
+.icon-diamond:before {
+  content: "\f219";
+}
+
+.icon-telegram:before {
+  content: "\f2c6";
+}
