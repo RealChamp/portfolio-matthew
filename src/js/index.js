@@ -36,6 +36,26 @@
 
     // End of menu SideBar
 
+    /* Animsition */
+    $(".animsition").animsition({
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'spinner',
+        loadingInner: '<div class="double-bounce1"></div><div class="double-bounce2"></div>', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: ['animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay: false,
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body',
+        transition: function (url) {
+            window.location.href = url;
+        }
+    });
+
     // Owl Carousel
 
     if ($('.owl-carousel').length > 0) {
@@ -103,6 +123,17 @@
 
 
     //End of Sections
+
+    /* Scroll Navagation */
+
+    $('#pp-nav').remove().appendTo('.animsition').addClass('white right-boxed hidden-xs');
+    $('.pp-nav-up').on('click', () => {
+        $.fn.pagepiling.moveSectionUp();
+    });
+    $('.pp-nav-down').on('click', () => {
+        $.fn.pagepiling.moveSectionDown();
+    });
+
 
 
 
