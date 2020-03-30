@@ -1,69 +1,7 @@
 @import "fonts";
+@import "global";
 
-html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialised;
-    font-size: 14px;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #717171;
-    background-color: #1b1b1b;
-    -webkit-overflow-scrolling: touch;
-}
-
-*,
-:after,
-:before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-a {
-    color: #c32865;
-    transition: color 300ms ease;
-    text-decoration: none;
-
-    &:hover {
-        color: #c32865;
-        outline: none;
-    }
-
-    &:focus {
-        text-decoration: none;
-    }
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-}
-
-
-/**/
-
-.text-primary {
-    color: #c32865 !important;
-}
-
-.display-2 {
-    font-size: 6.54rem;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.05em;
-    margin: 0;
-}
+/* Popup */
 
 .popup-youtube {
     display: inline-block;
@@ -75,7 +13,6 @@ h6 {
     text-decoration: none;
 }
 
-/**/
 
 /*icons*/
 
@@ -801,7 +738,7 @@ a.logo:focus {
 
 .display-1,
 .display-2 {
-    line-height: 1;
+    line-height: 1.05;
     letter-spacing: -0.05em;
     margin: 0;
 }
@@ -972,6 +909,13 @@ a.logo:focus {
         height: 1px;
         background-color: #fff;
     }
+}
+
+.progress {
+    height: 2.9rem;
+    border-radius: 0;
+    background: #222222;
+    margin-bottom: 2rem;
 }
 
 .progress-bars {
@@ -1268,6 +1212,7 @@ a.logo:focus {
 
 .review-row {
     position: relative;
+    padding: 0 5px;
     padding-top: 3rem;
     padding-bottom: 5rem;
 
