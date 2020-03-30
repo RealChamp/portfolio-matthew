@@ -1016,6 +1016,159 @@ a.logo:focus {
     margin-bottom: 1rem;
 }
 
+/* Projects */
+
+.bg-change {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .section-bg {
+        opacity: 0;
+        will-change: opacity, transform;
+        transform: scale(1);
+        transition: opacity 500ms 200ms ease, transform 5s 200ms ease;
+    }
+
+    .section-bg:first-child {
+        opacity: 1;
+    }
+
+    .active {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+
+.section-bg.mask::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    transition: all 500ms ease;
+}
+
+.section-bg.mask.hide::after {
+    opacity: 0;
+}
+
+.project-row {
+    position: relative;
+    margin-bottom: 3ren;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.view-all-projects,
+.project-row,
+.project-detail-row {
+    padding-left: 3rem;
+}
+
+.project-number {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 1.3rem;
+}
+
+.project-row a {
+    opacity: 0.5;
+
+    &,
+    .project-detail-row a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        transition: opacity 300ms;
+    }
+
+    &.acitve {
+        opacity: 1;
+    }
+
+}
+
+.project-row a::after,
+.project-row a.active::after,
+.project-detail-row a::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 2.2rem;
+    margin-left: -4rem;
+    height: 1px;
+    background-color: #fff;
+    width: 100000px;
+    transition: opacity 300ms;
+}
+
+
+.project-row a:hover::after,
+.project-row a.active::after,
+.project-detail-row a:hover::after {
+    opacity: 1;
+}
+
+
+.project-detail-row a::after {
+    top: 5.5vmin;
+}
+
+.project-title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.project-detail-row .project-title {
+    font-size: 9vmin;
+}
+
+.project-category {
+    font-size: 1rem;
+}
+
+.view-all {
+    position: relative;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 2.3rem;
+
+    a {
+        position: relative;
+        color: #fff;
+    }
+
+    a::before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        background-color: #fff;
+        height: 1px;
+        width: 100000px;
+        margin-right: 2rem;
+    }
+
+    a:hover {
+        color: #c32865;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
 
 
 
