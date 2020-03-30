@@ -914,6 +914,109 @@ a.logo:focus {
     margin-bottom: 0;
 }
 
+/* About */
+
+.experience-box {
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+    white-space: nowrap;
+    padding: 3.75rem;
+    border: 1px solid #fff;
+}
+
+.experience-border {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20.15rem;
+    height: 41.15rem;
+    border: 0.657rem solid #ffeb00;
+    left: 5rem;
+    top: -2rem;
+}
+
+.experience-content {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.experience-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23.1rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+}
+
+.experience-info {
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #fff;
+    text-align: right;
+
+    div {
+        display: inline-block;
+        position: relative;
+
+    }
+
+    div::after {
+        position: absolute;
+        right: 100%;
+        content: '';
+        width: 5remn;
+        bottom: 0.8rem;
+        height: 1px;
+        background-color: #fff;
+    }
+}
+
+.progress-bars {
+    margin-top: 3rem;
+}
+
+.progress:last-child {
+    margin-bottom: 0;
+}
+
+.progress-bar-wrp {
+    width: 0;
+    overflow: hidden;
+    transition: all 500ms;
+    height: 100%;
+}
+
+.progress:nth-child(2) .progress-bar-wrp {
+    transition-delay: 200ms;
+}
+
+.progress:nth-child(4) .progress-bar-wrp {
+    transition-delay: 500ms;
+}
+
+.progress:nth-child(6) .progress-bar-wrp {
+    transition-delay: 800ms;
+}
+
+.section.active .progress-bar-wrp,
+.pp-easing .progress-bar-wrp {
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: #c32865;
+    height: 100%;
+}
+
+.progress-bars .number {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+
 
 
 
