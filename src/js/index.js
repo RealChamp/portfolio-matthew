@@ -1,6 +1,6 @@
 (function ($) {
 
-
+    /* PreLoader */
     $(window).on('load', () => {
         $('.loader').fadeOut(1000);
         let wow = new WOW({
@@ -12,6 +12,7 @@
     });
 
 
+    /* SideBar */
     $('.navbar-toggle').on('click', () => {
         $('body').removeClass('menu-is-closed').addClass('menu-is-opened');
     });
@@ -34,20 +35,17 @@
         $('.section-bg.mask').removeClass('hide');
     });
 
-    // End of menu SideBar
 
     /* Animsition */
     $(".animsition").animsition({
         loading: true,
-        loadingParentElement: 'body', //animsition wrapper element
+        loadingParentElement: 'body',
         loadingClass: 'spinner',
-        loadingInner: '<div class="double-bounce1"></div><div class="double-bounce2"></div>', // e.g '<img src="loading.svg" />'
+        loadingInner: '<div class="double-bounce1"></div><div class="double-bounce2"></div>',
         timeout: false,
         timeoutCountdown: 5000,
         onLoadEvent: true,
         browser: ['animation-duration', '-webkit-animation-duration'],
-        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
         overlay: false,
         overlayClass: 'animsition-overlay-slide',
         overlayParentElement: 'body',
@@ -56,7 +54,7 @@
         }
     });
 
-    // Owl Carousel
+    /* Owl Carousel */
 
     if ($('.owl-carousel').length > 0) {
         $('.review-carousel').owlCarousel({
@@ -78,9 +76,7 @@
         });
     }
 
-    // End of Carousel
-
-    // Sections
+    /* Sections */
     function navbarFP() {
         if ($('.pp-section.active').scrollTop() > 0) {
             $('.navbar-fullpage').addClass('navbar-fixed');
@@ -122,7 +118,6 @@
     });
 
 
-    //End of Sections
 
     /* Scroll Navagation */
 
