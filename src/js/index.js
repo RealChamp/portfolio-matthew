@@ -129,6 +129,17 @@
         $.fn.pagepiling.moveSectionDown();
     });
 
+    /* project section switcher */
+
+    $('.project-row a').on('mouseover', function () {
+        let index = $('.project-row a').index(this);
+        $('.project-row a').removeClass('active');
+        $(this).addClass('active');
+        $('.bg-change .section-bg').removeClass('active').eq(index).addClass('active');
+    });
+
+
+
 
 
 
