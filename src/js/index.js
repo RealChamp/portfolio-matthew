@@ -36,23 +36,6 @@
     });
 
 
-    /* Animsition */
-    $(".animsition").animsition({
-        loading: true,
-        loadingParentElement: 'body',
-        loadingClass: 'spinner',
-        loadingInner: '<div class="double-bounce1"></div><div class="double-bounce2"></div>',
-        timeout: false,
-        timeoutCountdown: 5000,
-        onLoadEvent: true,
-        browser: ['animation-duration', '-webkit-animation-duration'],
-        overlay: false,
-        overlayClass: 'animsition-overlay-slide',
-        overlayParentElement: 'body',
-        transition: function (url) {
-            window.location.href = url;
-        }
-    });
 
     /* Owl Carousel */
 

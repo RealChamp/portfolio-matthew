@@ -22,12 +22,12 @@ body {
 }
 
 a {
-    color: #c32865;
+    color: #CF3476;
     transition: color 300ms ease;
     text-decoration: none;
 
     &:hover {
-        color: #c32865;
+        color: #CF3476;
         outline: none;
     }
 
@@ -133,7 +133,7 @@ input[type='email']:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-    border-color: #c32865;
+    border-color: #CF3476;
     outline: transparent;
     color: #fff;
 }
@@ -166,7 +166,7 @@ label.error {
     border: 0;
     border-radius: 0;
     padding: 1rem 2.25rem 1rem;
-    background-color: #c32865;
+    background-color: #CF3476;
     color: #fff;
     text-decoration: none;
     transition: all 300ms ease-out !important;
@@ -181,7 +181,7 @@ label.error {
 }
 
 .text-primary {
-    color: #c32865 !important;
+    color: #CF3476 !important;
 }
 
 .display-2 {
