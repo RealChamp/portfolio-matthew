@@ -12,6 +12,19 @@
     });
 
 
+    /* Popup Youtube */
+
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-with-zoom',
+        removeDelay: 150,
+        preloader: false,
+        fixedContentPos: false
+    });
+
+
+
     /* SideBar */
     $('.navbar-toggle').on('click', () => {
         $('body').removeClass('menu-is-closed').addClass('menu-is-opened');
@@ -120,7 +133,6 @@
         $(this).addClass('active');
         $('.bg-change .section-bg').removeClass('active').eq(index).addClass('active');
     });
-
 
 
 
