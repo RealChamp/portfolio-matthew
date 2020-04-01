@@ -134,6 +134,34 @@
         $('.bg-change .section-bg').removeClass('active').eq(index).addClass('active');
     });
 
+    /* Form validation */
+
+    if ($('.js-form').length) {
+        $('.js-form').each(function () {
+            $(this).validate({
+                errorClass: 'error',
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: $(form).serialize(),
+                        success: function () {
+                            $('.form-group-message').show();
+                            $('#error').hide();
+                            $('#success').show();
+                        },
+
+                        error: function () {
+                            $('.form-group-message').show();
+                            $('#error').hide();
+                            $('#success').show();
+                        }
+                    });
+                }
+            });
+        });
+    }
+
 
 
 
